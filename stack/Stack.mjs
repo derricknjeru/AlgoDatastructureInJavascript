@@ -37,12 +37,4 @@ class Stack {
 
 const stack = new Stack();
 
-stack.push(1);
-stack.push(2);
-
-console.log(stack.peek());
-console.log(stack.pop());
-console.log(stack.peek());
-console.log(stack.size());
-console.log(stack.pop());
-console.log(stack.isEmpty());
+export { stack };
