@@ -59,21 +59,17 @@ console.log(myArr);
 const mySet2 = new Set([1, 2, 3, 4]);
 
 const size2 = mySet2.size;
-
 console.log(size2);
 
 const myArr2 = [...mySet2];
-
 console.log(myArr2);
 
 // intersection of a set can be simulated via
 const intersection = new Set([...mySet1].filter((item) => mySet2.has(item)));
-
 console.log(intersection);
 
 // difference can be simulated via
 const difference = new Set([...mySet1].filter((x) => !mySet2.has(x)));
-
 console.log(difference);
 
 // Iterate set entries with forEach()
@@ -81,8 +77,4 @@ mySet2.forEach(function (value) {
   console.log(value);
 });
 
-mySet2.clear();
-// Iterate set entries with forEach()
-mySet2.forEach(function (value) {
-  console.log(value);
-});
+mySet2.clear(); //removes everything
