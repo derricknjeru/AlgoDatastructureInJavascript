@@ -80,3 +80,9 @@ console.log(difference);
 mySet2.forEach(function (value) {
   console.log(value);
 });
+
+mySet2.clear();
+// Iterate set entries with forEach()
+mySet2.forEach(function (value) {
+  console.log(value);
+});
